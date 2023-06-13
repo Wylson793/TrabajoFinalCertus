@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio - Crear cuenta</title>
+    <!-- Agregar estilos de bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Agregar estilos personalizados-->
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+<main class="pageform">
+    <!--Formulario para creacion de una cuenta-->
+    <form id="formCreateAccount" action="received.html" method="post">
+    <!--Titulo del formulario-->
+    <h2>Crear su cuenta</h2>
+    <!--Entrada nombre-->
+    <div class="mb-3">
+        <label class="form-label" class="form-label" for="txtName">Nombre:</label>
+        <input class="form-control" type="text" name="firstname" id="txtName" required>
+    </div>
+    
+    <!--Entrada apellido-->
+    <div class="mb-3">
+        <label class="form-label" for="txtLastName">Apellidos:</label>
+        <input class="form-control" type="text" name="lastname" id="txtLastName" required>
+    </div>
+    
+    <!--Entrada DNI-->
+    <div class="mb-3">
+        <label class="form-label" for="intDNI">DNI:</label>
+        <input class="form-control" type="number" name="dni" id="intDNI">
+    </div>
+
+    <!--Entrada Email-->
+    <div class="mb-3">
+        <label class="form-label" for="txtEm">Correo Electronico:</label>
+        <input class="form-control" type="email" name="email" id="txtEmail" required maxlength="100">
+    </div>
+
+    <!--Entrada Fecha de Nacimiento-->
+    <div class="mb-3">
+        <label class="form-label" for="date">Fecha de Nacimiento:</label>
+        <input class="form-control" type="date" name="fecnac" id="intFecNac" min="1970-12-31" max="2005-12-31" required>
+    </div>
+
+    <!--Entrada "sexo"-->
+    <div class="mb-3">
+        <p>Sexo</p>
+        <input class="form-check-input" type="radio" name="sexo" id="bolMasculino" value="m" checked>
+        <label class="form-check-label" for="bolMasculino" style="display:inline">Masculino</label>
+        <input class="form-check-input" type="radio" name="sexo" id="bolFemenino" value="f">
+        <label class="form-check-label" for="bolFemenino" style="display:inline">Femenino</label>
+    </div>
+
+
+    <!--Entrada "usuario"-->
+    <div class="mb-3">
+        <label class="form-label" for="txtUser">Usuario:</label>
+        <input class="form-control" type="text" name="user" id="txtUser" required>
+    </div>
+    <!--Entrada "cotraseña"-->
+    <div class="mb-3">
+        <label class="form-label" for="txtPassword">Contraseña:</label>
+        <input class="form-control" type="password" name="password" id="txtPassword" maxlength="60" required>
+    </div>
+    <!--Entrada Celular-->
+    <div class="mb-3">
+        <label class="form-label" for="intPhone">Telefono/Celular:</label>
+        <input class="form-control" type="tel" name="cel" id="intPhone" maxlength="13">
+    </div>
+    
+    <!--Entrada Direccion-->
+    <div class="mb-3">
+        <label class="form-label" for="txtAddress1">Direccion:</label>
+        <input class="form-control" type="text" name="address1" id="txtAddress1" maxlength="100">
+        <input class="form-control" type="text" name="address2" id="txtAddress2" maxlength="100">
+    </div>
+    
+    <!--Entrada Aceptar las condiciones-->
+    <div class="mb-3">
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="bolAceptar">
+        <label class="form-check-label" for="bolAceptar" style="display:inline-block">Acepta las <a href="#"> condiciones </a> para crear una cuenta</label>
+        </div>
+    </div>
+
+    <!--Entrada Submit-->
+    <div class="mb-3">
+        <button class="btn btn-primary" type="submit">Enviar</button>
+    </div>
+    </form>
+</main>
+</body>
+</html>

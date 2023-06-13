@@ -1,0 +1,184 @@
+/* estilo global */
+/*fuente externa*/
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600');
+
+/*estilo global*/
+* {
+    /*agregamos estilo a las letras de toda la pagina*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    color: #1c1c1c;
+    box-sizing: border-box;
+}
+
+/* Body*/
+body {
+    padding: 0px;
+    margin: 0px;
+    background-image: url(background.jpeg);
+    background-attachment: fixed;
+}
+
+/*cabecera*/
+header {
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #ffffff;
+    background-color: #E93F01;
+    background-image: url(tituloFondo.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Alkatra', cursive;
+    margin: 0px;
+    text-align: center;
+    color: #1B2A7F;
+}
+
+/*estilo titulo*/
+h2 {
+    font-size: 1.2em;
+    color: #1B2A7F;
+    text-align: center;
+}
+
+header>h2 {
+    text-align: center;
+    margin: 0px;
+    color: #FDA301;
+}
+
+.registroUsuario{
+    background: #f9f2dd;
+}
+
+#txtAddress1{
+    margin-bottom: 8px;
+}
+
+/* estilo al formulario*/
+.pageform {
+/*.container{*/
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ECE667;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+/*pagina catalogo*/
+main.pageCatalogo {
+    font-size: 1em;
+    /*max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;*/
+    background-color: papayawhip;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/*articulos*/
+article {
+/*    width: 24%;
+    min-width: 280px;
+    display: inline-block;*/
+    border: #154686 2px solid;
+    /*margin: 20px 7px 0px*/
+}
+
+article>img {
+    width: 100%;
+}
+
+article>h3 {
+    margin: 6px;
+    font-weight: 500;
+}
+
+article>p {
+    margin: 10px 0px;
+}
+
+article>button {
+    margin-bottom: 20px;
+    font-size: 1em;
+    padding: 6px 15px;
+}
+
+button:hover{
+    font-weight: bold;
+}
+
+article:hover {
+    border: #E01937 2px solid;
+}
+
+.precioOriginal {
+    text-decoration: line-through;
+}
+
+.precioDescuento {
+    background-color: #E01937;
+    color: #FFFFFF;
+    font-weight: 500;
+    border-radius: 10%;
+}
+
+.precioFinal {
+    color: #E01937;
+    font-weight: bold;
+}
+
+/*carrito de compra*/
+#carritoVacio{
+    height: 300px;
+}
+
+
+
+/*elementos de formulario*/
+div>p{
+    display: block;
+    font-weight: bold;
+}
+label{
+    display: block;
+    font-weight: bold;
+}
+#formCreateAccount >div>input[type="text"],[type="tel"],[type="password"],[type="number"],[type="email"],[type="date"]{
+    width: 98%;
+}
+/* otra opcion a .imgProduct
+article>img{
+*/
+.imgProduct {
+    width: 100%;
+    /*
+    para esquinas redondeadas
+    border-radius: 10%;
+    */
+}
+/*Boton Whatsapp*/
+#whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right:20px;
+ }
+/*personalizar boton whatsapp*/
+.imgWhats{
+    width: 80px;
+    filter: drop-shadow(0 1px 4px rgba(0,0,0,.4));
+ }
+
+footer {
+    background: #FF5454;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #252629;
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogo de productos</title>
+  <!--Configuracion Boostrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!--Configuracion personal-->
+  <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+  <!--Encabezado-->
+  <header>
+    <h1>Electro Home</h1>
+    <!--titulo1-->
+    <h2>Seguridad, calidad y garantia</h2>
+    <!--titulo2-->
+  </header>
+  <!--Barra de menu -->
+  <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Electro House</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Incio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="form-newuser.html">Registrate</a>
+          </li>
+
+        </ul>
+        <div class="d-flex">
+          <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#carritoModal"
+            type="button">Carrito</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- ventana Modal -->
+  <div class="modal fade" id="carritoModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de compra</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="carrito">
+            <img id="carritoVacio" class="img-fluid mx-auto d-block" src="imgArticulos/OIP.jpeg" alt="Carrito vacio">
+            <figcaption class="text-center">Actualmente usted no cuenta con ningun producto</figcaption>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary disabled">Cotizar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--parte principal-->
+  <main class="pageCatalogo container">
+    <!--Seccion catalogo-->
+    <section class="row" id="catalogo">
+      <!--articulo1-->
+      <article class="col-6 col-md-4 col-lg-3">
+
+        <img class="imgProduct" src="imgArticulos/cocina1.JPG" alt="cocina indurama">
+
+        <h3>Cocina Indurama</h3>
+        <p>
+          <span class="precioOriginal">s/. 300.00</span>
+          <span class="precioDescuento">- 50%</span><br>
+          <span class="precioFinal">s/. 150.00</span>
+        </p>
+        <button class="btn btn-primary">Agregar carrito</button>
+      </article>
+      <!--articulo2-->
+      <article class="col-6 col-md-4 col-lg-3">
+
+        <img class="imgProduct" src="imgArticulos/cocina2.JPG" alt="cocina bosch">
+
+        <h3>Cocina BOSCH</h3>
+        <p>
+          <span class="precioOriginal">s/. 110.00</span>
+          <span class="precioDescuento">- 10%</span><br>
+          <span class="precioFinal">s/. 100.00</span>
+        </p>
+        <button class="btn btn-primary">Agregar carrito</button>
+      </article>
+      <!--articulo3-->
+      <article class="col-6 col-md-4 col-lg-3">
+
+        <img class="imgProduct" src="imgArticulos/ducha1.JPG" alt="Ducha rotoplast grande">
+
+        <h3>Ducha electrica grande</h3>
+        <p>
+          <span class="precioOriginal">s/. 220.00</span>
+          <span class="precioDescuento">- 60%</span><br>
+          <span class="precioFinal">s/. 180.00</span>
+        </p>
+        <button class="btn btn-primary">Agregar carrito</button>
+      </article>
+      <!--articulo4-->
+      <article class="col-6 col-md-4 col-lg-3">
+
+        <img class="imgProduct" src="imgArticulos/ducha2.JPG" alt="Ducha rotoplast pequeño">
+
+        <h3>Ducha electrica pequeño</h3>o
+        <p>
+          <span class="precioOriginal">s/. 230.00</span>
+          <span class="precioDescuento">- 25%</span><br>
+          <span class="precioFinal">s/. 190.00</span>
+        </p>
+        <button class="btn btn-primary">Agregar carrito</button>
+      </article>
+      <!--articulo5-->
+      <article class="col-6 col-md-4 col-lg-3">
+
+        <img class="imgProduct" src="imgArticulos/horno1.JPG" alt="horno oster plomo">
+
+        <h3>Horno microondas OSTER</h3>
+        <p>
+          <span class="precioOriginal">s/. 25.00</span>
+          <span class="precioDescuento">- 15%</span><br>
+          <span class="precioFinal">s/. 110.00</span>
+        </p>
+        <button class="btn btn-primary" class="btn btn-primary">Agregar carrito</button>
+      </article>
+      <!--articulo6-->
+      <article class="col-6 col-md-4 col-lg-3">
+
+        <img class="imgProduct" src="imgArticulos/horno2.JPG" alt="horno oster negro">
+
+        <h3>Horno microondas Oster negro</h3>
+        <p>
+          <span class="precioOriginal">s/. 122.00</span>
+          <span class="precioDescuento">- 40%</span><br>
+          <span class="precioFinal">s/. 320.00</span>
+        </p>
+        <button class="btn btn-primary">Agregar carrito</button>
+      </article>
+      <!--articulo7-->
+      <article class="col-6 col-md-4 col-lg-3">
+
+        <img class="imgProduct" src="imgArticulos/lavadora1.JPG" alt="lavadora 12 kilos">
+
+        <h3>Lavadora de ropa mediana</h3>
+        <p>
+          <span class="precioOriginal">s/. 1150.00</span>
+          <span class="precioDescuento">- 20%</span><br>
+          <span class="precioFinal">s/. 1120.00</span>
+        </p>
+        <button class="btn btn-primary">Agregar carrito</button>
+      </article>
+      <!--articulo8-->
+      <article class="col-6 col-md-4 col-lg-3">
+
+        <img class="imgProduct" src="imgArticulos/lavadora2.JPG" alt="lavadora 20 kilos">
+
+        <h3>Lavadora de rapa grande</h3>
+        <p>
+          <span class="precioOriginal">s/. 2110.00</span>
+          <span class="precioDescuento">- 50%</span><br>
+          <span class="precioFinal">s/. 2050.00</span>
+        </p>
+        <button class="btn btn-primary">Agregar carrito</button>
+      </article>
+      <!--articulo9-->
+      <article class="col-6 col-md-4 col-lg-3">
+
+        <img class="imgProduct" src="imgArticulos/refri1.JPG" alt="refrigeradora basica">
+
+        <h3>Refrigeradora mediana</h3>
+        <p>
+          <span class="precioOriginal">s/. 22.00</span>
+          <span class="precioDescuento">- 45%</span><br>
+          <span class="precioFinal">s/. 100.00</span>
+        </p>
+        <button class="btn btn-primary">Agregar carrito</button>
+      </article>
+      <!--articulo10-->
+      <article class="col-6 col-md-4 col-lg-3">
+
+        <img class="imgProduct" src="imgArticulos/refri2.JPG" alt="refrigeradora 2 puertas">
+
+        <h3>Refrigeradora grande</h3>
+        <p>
+          <span class="precioOriginal">s/. 22.00</span>
+          <span class="precioDescuento">- 55%</span><br>
+          <span class="precioFinal">s/. 100.00</span>
+        </p>
+        <button class="btn btn-primary">Agregar carrito</button>
+      </article>
+      <!--articulo11-->
+      <article class="col-6 col-md-4 col-lg-3">
+
+        <img class="imgProduct" src="imgArticulos/secadora1.JPG" alt="Secadora">
+
+        <h3>Secadora basica</h3>
+        <p>
+          <span class="precioOriginal">s/. 22.00</span>
+          <span class="precioDescuento">- 35%</span><br>
+          <span class="precioFinal">s/. 100.00</span>
+        </p>
+        <button class="btn btn-primary">Agregar carrito</button>
+      </article>
+      <!--articulo12-->
+      <article class="col-6 col-md-4 col-lg-3">
+
+        <img class="imgProduct" src="imgArticulos/secadora2.JPG" alt="Secadora y accesorios">
+
+        <h3>Secadora + Accesorios</h3>
+        <p>
+          <span class="precioOriginal">s/. 22.00</span>
+          <span class="precioDescuento">- 15%</span><br>
+          <span class="precioFinal">s/. 100.00</span>
+        </p>
+        <button class="btn btn-primary">Agregar carrito</button>
+      </article>
+    </section>
+  </main>
+  <!--boton whatsapp-->
+  <div id="whatsapp">
+    <a href="https://api.whatsapp.com/" target="_blank">
+      <img class="imgWhats" src="logo-wasap.png" alt="whatsapp">
+    </a>
+  </div>
+
+  <!--pie de pagina-->
+  <footer>
+    Curso de Front End - HTML CSS Javascript <br>
+    Alumno : Daniel Wilson Huaraya Perca
+  </footer>
+
+  <!--Codigo JavaScript de Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!--Codigo JavaScript-->
+  <script src="main.js"></script>
+</body>
+
+</html>
